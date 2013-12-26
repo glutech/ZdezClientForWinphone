@@ -1,0 +1,4 @@
+C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\Bin\Release\ZdezClientForWP_ScheduledTaskAgent.dll
+C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\Bin\Release\ZdezClientForWP_ScheduledTaskAgent.pdb
+C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\obj\Release\ZdezClientForWP_ScheduledTaskAgent.dll
+C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\obj\Release\ZdezClientForWP_ScheduledTaskAgent.pdb

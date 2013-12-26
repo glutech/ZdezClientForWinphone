@@ -1,0 +1,29 @@
+﻿<xapCache source="C:\Works\ZdezClientForWP\ZdezClientForWP\Bin\Release\ZdezClientForWP.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="12/25 15:45:39">
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Bin\Release\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="12/25 15:41:42" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Background.png" archivePath="Background.png" lastWriteTime="12/19 8:54:55" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="12/19 8:54:54" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\obj\Release\ZdezClientForWP.dll" archivePath="ZdezClientForWP.dll" lastWriteTime="12/25 15:45:39" />
+  <file source="C:\Works\ZdezClientForWP\packages\Coding4Fun.Toolkit.Controls.2.0.7\lib\wp71\Coding4Fun.Toolkit.Controls.dll" archivePath="Coding4Fun.Toolkit.Controls.dll" lastWriteTime="11/22 12:50:02" />
+  <file source="C:\Works\ZdezClientForWP\packages\PhoneThemeManager.1.5\lib\sl4-windowsphone71\JeffWilcox.PhoneThemeManager.dll" archivePath="JeffWilcox.PhoneThemeManager.dll" lastWriteTime="11/22 8:48:45" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="7/6 1:40:16" />
+  <file source="C:\Works\ZdezClientForWP\packages\WPtoolkit.4.2013.08.16\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="11/22 15:32:20" />
+  <file source="C:\Works\ZdezClientForWP\packages\Newtonsoft.Json.5.0.8\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="12/2 22:43:42" />
+  <file source="C:\Works\ZdezClientForWP\packages\SharpGIS.GZipWebClient.1.4.0.0\lib\wp71\SharpGIS.GZipWebClient.dll" archivePath="SharpGIS.GZipWebClient.dll" lastWriteTime="12/2 21:18:54" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\Bin\Release\ZdezClientForWP_ScheduledTaskAgent.dll" archivePath="ZdezClientForWP_ScheduledTaskAgent.dll" lastWriteTime="12/25 15:42:01" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Assets\AppBar\appbar.back.rest.png" archivePath="Assets\AppBar\appbar.back.rest.png" lastWriteTime="7/6 1:38:12" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Assets\AppBar\appbar.next.rest.png" archivePath="Assets\AppBar\appbar.next.rest.png" lastWriteTime="7/6 1:38:22" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Assets\android_icon.png" archivePath="Assets\android_icon.png" lastWriteTime="11/21 23:16:37" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Assets\AppBar\appbar.refresh.rest.png" archivePath="Assets\AppBar\appbar.refresh.rest.png" lastWriteTime="7/6 1:38:22" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Assets\ListeningEarcon.wav" archivePath="Assets\ListeningEarcon.wav" lastWriteTime="12/17 10:12:21" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Assets\RemoteNoticePoolQuery.xml" archivePath="Assets\RemoteNoticePoolQuery.xml" lastWriteTime="12/25 8:50:07" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Assets\zdez_hr.png" archivePath="Assets\zdez_hr.png" lastWriteTime="11/27 10:26:56" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="11/22 15:32:20" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\SplashScreenImage.screen-720p.jpg" archivePath="SplashScreenImage.screen-720p.jpg" lastWriteTime="12/17 17:20:57" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\SplashScreenImage.screen-WVGA.jpg" archivePath="SplashScreenImage.screen-WVGA.jpg" lastWriteTime="12/17 17:20:57" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\SplashScreenImage.screen-WXGA.jpg" archivePath="SplashScreenImage.screen-WXGA.jpg" lastWriteTime="12/17 17:20:56" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Assets\AppVersion.xml" archivePath="Assets\AppVersion.xml" lastWriteTime="12/19 10:03:56" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/25 15:42:02" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Bin\Release\Assets\android_icon.png" archivePath="Assets\android_icon.png" lastWriteTime="11/21 23:16:37" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Bin\Release\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="12/19 8:54:54" />
+  <file source="C:\Works\ZdezClientForWP\ZdezClientForWP\Bin\Release\Background.png" archivePath="Background.png" lastWriteTime="12/19 8:54:55" />
+</xapCache>

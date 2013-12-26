@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NoticePool>
+  <!-- 待接收通知条目数量 -->
+  <ToReceiveNum>123</ToReceiveNum>
+  <!-- 最新一条通知的编号 -->
+  <LastItemId>95599</LastItemId>
+  <!-- 最新一条通知的标题（涉及到用户输入内容，需转义） -->
+  <LastItemTitle>测试标题</LastItemTitle>
+</NoticePool>

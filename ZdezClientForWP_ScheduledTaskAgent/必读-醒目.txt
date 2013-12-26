@@ -1,0 +1,13 @@
+﻿此项目用于ZdezClientForWP的计划任务
+实现自动同步推送URL和定时刷取通知
+
+所有常量或逻辑规则请参考ZdezClientForWP主项目
+
+参考链接
+Windows Phone 的后台代理
+http://msdn.microsoft.com/zh-cn/library/hh202942
+Windows Phone 的后台代理不支持的 API
+http://msdn.microsoft.com/zh-cn/library/hh202962
+
+
+wu.kui2@gmail.com

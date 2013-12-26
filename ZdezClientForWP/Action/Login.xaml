@@ -1,0 +1,123 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="ZdezClientForWP.Action.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:Controls="clr-namespace:Coding4Fun.Toolkit.Controls;assembly=Coding4Fun.Toolkit.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+	<phone:PhoneApplicationPage.Resources>
+        
+        <!-- UserBoxStyle -->
+		<ControlTemplate x:Key="PhoneDisabledTextBoxTemplate" TargetType="TextBox">
+			<ContentControl x:Name="ContentElement" BorderThickness="0" HorizontalContentAlignment="Stretch" Margin="{StaticResource PhoneTextBoxInnerMargin}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="Stretch"/>
+		</ControlTemplate>
+		<Style x:Key="UserBoxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="{StaticResource PhoneChromeBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PhoneTextBoxForegroundColor}"/>
+			<Setter Property="BorderBrush" Value="Transparent"/>
+			<Setter Property="Padding" Value="8,2"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="TextBox">
+						<Grid Background="Transparent">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="FocusStates">
+									<VisualState x:Name="Focused">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="EnabledBorder">
+                                                <DiscreteObjectKeyFrame KeyTime="1" Value="{StaticResource PhoneForegroundBrush}"/>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Border x:Name="EnabledBorder" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Margin="{StaticResource PhoneTouchTargetOverhang}">
+								<ContentControl x:Name="ContentElement" BorderThickness="0" HorizontalContentAlignment="Stretch" Margin="{StaticResource PhoneTextBoxInnerMargin}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="Stretch"/>
+							</Border>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+        
+        <!-- PwdBoxStyle -->
+		<ControlTemplate x:Key="PhoneDisabledPasswordBoxTemplate" TargetType="PasswordBox">
+			<Border x:Name="ContentElement" BorderThickness="0" Margin="{StaticResource PhonePasswordBoxInnerMargin}" Padding="{TemplateBinding Padding}"/>
+		</ControlTemplate>
+		<Style x:Key="PwdBoxStyle" TargetType="PasswordBox">
+            <Setter Property="Background" Value="{StaticResource PhoneChromeBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PhoneTextBoxForegroundColor}"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Padding" Value="8,2"/>
+            <Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="PasswordBox">
+						<Grid Background="Transparent">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="FocusStates">
+									<VisualState x:Name="Focused">
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="EnabledBorder">
+                                                <DiscreteObjectKeyFrame KeyTime="1" Value="{StaticResource PhoneForegroundBrush}"/>
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Border x:Name="EnabledBorder" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Margin="{StaticResource PhoneTouchTargetOverhang}">
+								<Border x:Name="ContentElement" BorderThickness="0" Margin="{StaticResource PhonePasswordBoxInnerMargin}" Padding="{TemplateBinding Padding}"/>
+							</Border>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</phone:PhoneApplicationPage.Resources>
+	
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneBackgroundBrush}">
+        <Grid Margin="12" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="/Assets/android_icon.png" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,100" Grid.ColumnSpan="2" />
+            <TextBlock  TextWrapping="Wrap" Text="账号" Margin="0" Grid.Row="1" VerticalAlignment="Center" />
+            <TextBox x:Name="UserBox"  TextWrapping="Wrap" InputScope="Password" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource UserBoxStyle}" />
+            <TextBlock TextWrapping="Wrap" Text="密码" Margin="0" Grid.Row="2" VerticalAlignment="Center" />
+            <PasswordBox x:Name="PwdBox"  Foreground="{StaticResource PhoneTextBoxForegroundBrush}" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource PwdBoxStyle}"/>
+        </Grid>
+
+        <Controls:ProgressOverlay Name="ProgressOverlay" Visibility="Collapsed" Canvas.ZIndex="1" Foreground="{StaticResource PhoneAccentBrush}" Background="{StaticResource PhoneBackgroundBrush}" Opacity="0.8">
+            <Controls:ProgressOverlay.Content>
+                <StackPanel>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource PhoneAccentBrush}">正在登录</TextBlock>
+                    <toolkit:PerformanceProgressBar IsIndeterminate="True" Margin="0,12,0,0" />
+                </StackPanel>
+            </Controls:ProgressOverlay.Content>
+        </Controls:ProgressOverlay>
+
+        <!-- 遮挡状态栏黑色边缘 -->
+        <Rectangle Fill="{StaticResource PhoneBackgroundBrush}" Stroke="{StaticResource PhoneBackgroundBrush}" VerticalAlignment="Top" Canvas.ZIndex="-37" Height="220" Margin="0,-108,0,0"/>
+
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False" Opacity="0.5">
+            <shell:ApplicationBarIconButton x:Name="LoginBtn"  IconUri="/Assets/AppBar/appbar.next.rest.png" Text="登录"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

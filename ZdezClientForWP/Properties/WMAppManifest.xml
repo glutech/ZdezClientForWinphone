@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{387e2650-58c9-4dc7-a1ba-9665262878a6}" Title="找得着" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Boke Technology" Description="“找得着”是博客科技与各签约大中专院校合作推出的面向学生提供人力资源信息服务的客户端软件。学生可使用客户端浏览签约学校的校园资讯，可接收学校管理部门的重要通知，可以浏览“找得着”（www.zdez.cn）免费提供的招聘信息、就业指导信息以及就业政策等内容。" Publisher="Boke Technology Co., Ltd" BitsPerPixel="16">
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="Action/Login.xaml" />
+      <ExtendedTask Name="BackgroundTask">
+        <BackgroundServiceAgent Specifier="ScheduledTaskAgent" Name="ZdezClientForWP_ScheduledTaskAgent" Source="ZdezClientForWP_ScheduledTaskAgent" Type="ZdezClientForWP_ScheduledTaskAgent.ScheduledAgent" />
+      </ExtendedTask>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="ZdezClientForWPToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>找得着</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>

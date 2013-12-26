@@ -1,0 +1,5 @@
+C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\Bin\Debug\ZdezClientForWP_ScheduledTaskAgent.dll
+C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\Bin\Debug\ZdezClientForWP_ScheduledTaskAgent.pdb
+C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\obj\Debug\ZdezClientForWP_ScheduledTaskAgent.dll
+C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\obj\Debug\ZdezClientForWP_ScheduledTaskAgent.pdb
+C:\Works\ZdezClientForWP\ZdezClientForWP_ScheduledTaskAgent\obj\Debug\ZdezClientForWP_ScheduledTaskAgent.csprojResolveAssemblyReference.cache
